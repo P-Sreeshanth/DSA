@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define size 10
+
+int linearhash[size]={0};
+void display(){
+	int i;
+	for(i=0;i<size;i++)
+	printf("%d\t%d\n",i,linearhash[i]);
+}
+void insert(){
+	int value,hash,linH;
+	printf("enter the input");
+	scanf("%d",&value);
+	hash=value%size;
+	for(int i = 0; i < size;i++){
+		linH=(hash +i*i)%size;
+		if (linearhash[linH] == 0){
+		linearhash[linH] = value;
+		break;}
+	}
+	
+	
+}
+int main(){
+int k=0;
+while(k!=3){
+printf("1.dispaly 2.insert\n3.exit");
+scanf("%d",&k);
+
+switch(k)
+{
+	case 1:display();
+	break;
+	case 2:insert();
+	break;
+	default:
+		printf("invalid choice");
+}
+}
+return 0;}
