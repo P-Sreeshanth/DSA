@@ -15,8 +15,8 @@ void insert(){
 	hash=value%size;
 	for(int i = 0; i < size;i++){
 		quaH=(hash +i*i)%size;
-		if (quadratichash[linH] == 0){
-		quadratichash[linH] = value;
+		if (quadratichash[quaH] == 0){
+		quadratichash[quaH] = value;
 		break;}
 	}
 
