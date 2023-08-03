@@ -1,0 +1,41 @@
+
+// You are using GCC
+#include<stdio.h>
+void merge(int a[],int b[],int n,int m)
+{
+    int i=0,j=0,k=0;
+    int c[100];
+    while (i<n && j<m)
+    { 
+        if(a[i]<b[j]){
+        c[k]=a[i];
+        k++,i++;
+        }
+        else
+        {
+            c[k]=b[j];
+        k++,j++;
+        }
+        while(i<n)
+        {
+        c[k]=a[i]l;
+        i++,k++;
+            
+        }
+        while(j<m)
+        {
+        c[k]=b[j];
+        j++,k++;
+        }
+        return a[i];
+}
+int main ()
+{
+    int n,i,j,k,a[10],b[10]
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    scanf("%d",&b[i]);
+    
+}
